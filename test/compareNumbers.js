@@ -1,19 +1,43 @@
-import compareNumbers from 'compareNum.js';
+import compareNumbers from '../compareNum.js';
 
 const test = QUnit.test;
 
-test('return true if guessed number is equal to secret number', function(assert) {
+test('compare numbers returns 0 when numbers are equal', (assert) => {
     const correctNumber = 9;
-    const userChoice = 9;
-    const result = compareNumbers(correctNumber);
-    
-    //Arrange
-    // Set up your parameters and expectations
-
-    //Act 
-    // Call the function you're testing and set the result to a const
-
-    //Assert
-    // Make assertions about what is expected valid result
-    assert.equal(true, false);
+    const userGuess = 9;
+    const expected = 0;
+    const result = compareNumbers(correctNumber, userGuess);
+    assert.equal(result, expected);
 });
+test('compare numbers returns -1 when user guess too low', (assert) => {
+    const correctNumber = 9;
+    const userGuess = 8;
+    const expected = -1;
+    const result = compareNumbers(userGuess, correctNumber);
+    assert.equal(result, expected);
+});
+test('compare numbers returns 1 when user guess too high', (assert) => {
+    const userGuess = 10;
+    const correctNumber = 9;
+    const expected = 1;
+    const result = compareNumbers(userGuess, correctNumber);
+    assert.equal(result, expected);
+});
+// test('compare numbers returns 0 when numbers are equal', (assert) => {
+//     const correctNumber = 9;
+//     const result = compareNumbers(correctNumber);
+//     const expected = 0;
+//     assert.equal(result, expected);
+// });
+// test('compare numbers returns 1 when numbers too low', (assert) => {
+//     const correctNumber = 9;
+//     const result = compareNumbers(correctNumber);
+//     const expected = 1;
+//     assert.equal(result, expected);
+// });
+// test('compare numbers returns -1 when numbers are too high', (assert) => {
+//     const correctNumber = 9;
+//     const result = compareNumbers(correctNumber);
+//     const expected = -1;
+//     assert.equal(result, expected);
+// });
