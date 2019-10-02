@@ -1,7 +1,3 @@
-// const compareNumbers = (number) => {
-//     return number > 9;
-// };
-    
 
 function compareNumbers(userGuess, correctNumber) {
 
@@ -12,8 +8,6 @@ function compareNumbers(userGuess, correctNumber) {
     } else {
         return 1;
     }
-
-
 }
 
 export default compareNumbers;

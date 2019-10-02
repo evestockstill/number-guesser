@@ -16,18 +16,18 @@
         <h3>you have 4 tries to get it right</h3>
     </header>
     <div>
-    <span id="output">123</span>
+    <span id="output"></span><span id= "tries-left"></span>
     </div>
     <input type="text" placeholder="Enter Guess" id="input-number" class="inputNumber">
     <button type="submit" id="btn">Guess</button>
-    <div id="pictures">
-        <img src="../assets/bullseye.jpeg" alt="" id="you-win">
-        <img src="../assets/try again.jpeg" alt="" id="try-again">
-        <img src="../assets/gameover.png" alt="" id="game-over">
-    </div>
+    <section id="pictures">
+        <img src="./assets/bullseye.jpeg" alt="dartboard bullseye" class="hidden" id="you-win">
+        <img src="./assets/try again.jpeg" alt="cat saying try again" class="hidden" id="try-again">
+        <img src="./assets/gameover.png" alt="game over picture" class="hidden" id="game-over">
+    </section>
 
     <body>
-        <script src="app.js" type="module"></script>
+        <script src="app.js"></script>
     </body>
 
 </html>
