@@ -9,6 +9,7 @@ const tryAgain = document.getElementById('try-again');
 const gameOver = document.getElementById('game-over');
 let triesLeft = 4;
 let correctNumber = 9;
+
 submitBtn.addEventListener('click', () => {
     triesLeft--;
     triesLeftDisplay.textContent = triesLeft;
