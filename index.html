@@ -1,17 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <header class="header">
+        <h1>Guess a number from 1-20 <h1>
+        <h3>you have 4 tries to get it right</h3>
+    </header>
+    <div id="output-container"></div>
+    <span id="output"></span>
+    </div>
+    <input type="text" placeholder="Enter Guess" id="inputNumber" class="inputNumber">
+    <button type="submit" id="btn">Guess</button>
+    <div id="pictures">
+        <img src="../assets/bullseye.jpeg" alt="" id="youWin">
+        <img src="../assets/try again.jpeg" alt="" id="tryAgain">
+        <img src="../assets/gameover.png" alt="" id="gameOver">
+    </div>
 
-    <script src="app.js" type="module"></script>
-</body>
+    <body>
+        <script src="app.js" type="module"></script>
+    </body>
 
 </html>
