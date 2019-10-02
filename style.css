@@ -4,12 +4,14 @@
     font-family: 'Montserrat', sans-serif;
 }
 body {
-    height: 100vh;
     background: hsla(164, 100%, 28%, 0.82);
+}
+div {
+    text-align: center;
 }
 h1, h3, span {
     text-align: center;
-    margin: 10px auto;
+    margin:  auto;
     text-transform: capitalize;
     color: hsla(214, 100%, 15%, 0.87);
 }
@@ -20,15 +22,8 @@ h1, h3, span {
 #output {
     display: block;
     width: 4rem;
-    margin: 35px auto;
+    margin: 5px auto;
 }
-/* #output-container {
-    display: flex;
-    width: 400px;
-    justify-content: center;
-    align-items: center;
-    color: red;
-} */
 #pictures {
     position: relative;
     text-align: center;
@@ -66,7 +61,7 @@ h1, h3, span {
 }
 span#output {
     color: hsla(214, 100%, 25%, 0.82);
-    font-size: 1.5rem;
+    
 }
 .hidden {
     visibility: hidden;
