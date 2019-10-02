@@ -1,9 +1,12 @@
-// IMPORT MODULES under test here:
-// import example from '../src/example.js';
+import compareNumbers from 'compareNum.js';
 
 const test = QUnit.test;
 
-test('time to test a function', function(assert) {
+test('return true if guessed number is equal to secret number', function(assert) {
+    const correctNumber = 9;
+    const userChoice = 9;
+    const result = compareNumbers(correctNumber);
+    
     //Arrange
     // Set up your parameters and expectations
 
